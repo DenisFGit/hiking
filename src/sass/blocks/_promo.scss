@@ -1,0 +1,131 @@
+.promo {
+    min-height: 100vh;
+    // background: url('../img/evening_mountain.jpg') no-repeat 50% / cover;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 1)), url('../img/evening_mountain.jpg') no-repeat 50% / cover;
+    padding: 64px 0;
+    .container {
+        // max-width: 1140px;
+        padding: 0 4%;
+    }
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        font-weight: 700;
+        font-size: 32px;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+        color: #fff;
+        h2 {
+            margin-bottom: 0;
+        }
+    }
+    &__list-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+    &__list {
+        display: flex;
+        gap: 40px;
+        list-style-type: none;
+        padding-left: 0;
+        text-align: center;
+        margin-bottom: 0;
+        @include text_style;
+    }
+    &__account {
+        @include text_style;
+        &-wrapper {
+            display: flex;
+            gap: 8px;
+        }
+    }
+    &__main {
+        margin-top: 128px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__socials {
+        margin-top: 142px;
+        padding-left: 0;
+        list-style-type: none;
+        display: flex;
+        gap: 24px;
+        flex-direction: column;
+        @include text_style;
+        &-text {
+            // transform: rotate(-90deg);
+            writing-mode: vertical-lr;
+        }
+    }
+    &__motto {
+        width: 815px;
+    }
+    &__motto-text {
+        margin-top: 32px;
+        font-weight: 400;
+        font-size: 88px;
+        line-height: 114%;
+        text-transform: capitalize;
+        color: #fff;
+    }
+    &__scroll {
+        @include text_style;
+        display: flex;
+        gap: 16px;
+        margin-top: 32px;
+    }
+    &__indicators {
+        margin-top: 130px;
+        display: flex;
+        ul {
+            @include text_style;
+            width: 77px;
+            padding-left: 0;
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            // margin-right: 32px;
+            a {
+                color: #fff;
+                text-decoration: none;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                &:nth-child(1) {
+                    justify-content: flex-start;
+                }
+                &:hover {
+                    transition: 0.6s all;
+                    &:hover {
+                        color: #FBD784;
+                        transition: 0.6s all;
+                        &::after {
+                            content: '';
+                            display: block;
+                            width: 3px;
+                            height: 60px;
+                            background-color: #fff;
+                            position: absolute;
+                            top: 0;
+                            right: -3px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__line {
+        width: 3px;
+        height: 240px;
+        background-color: #fff;
+        opacity: 0.5;
+    }
+}
+
+.nav-media {
+    display: none;
+}
