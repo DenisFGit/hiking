@@ -42,6 +42,7 @@
     &__more-info {
         display: flex;
         gap: 16px;
+        cursor: pointer;
         img {
             transform: rotate(-90deg);
         }
@@ -49,6 +50,12 @@
             @include text_style;
             color: $first_color;
         }
+        &-text {
+            &:hover {
+                color: #ffffff;
+            }
+        }
+
     }
 }
 
@@ -88,12 +95,18 @@
     &__more-info {
         display: flex;
         gap: 16px;
+        cursor: pointer;
         img {
             transform: rotate(-90deg);
         }
         &-text {
             @include text_style;
             color: $first_color;
+        }
+        &-text {
+            &:hover {
+                color: #ffffff;
+            }
         }
     }
 }

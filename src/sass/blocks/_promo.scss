@@ -7,11 +7,11 @@
         // max-width: 1140px;
         padding: 0 4%;
     }
-    .nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+    // .nav {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     align-items: center;
+    // }
     &__logo {
         font-weight: 700;
         font-size: 32px;
@@ -55,6 +55,9 @@
         gap: 24px;
         flex-direction: column;
         @include text_style;
+        li img {
+            cursor: pointer;
+        }
         &-text {
             // transform: rotate(-90deg);
             writing-mode: vertical-lr;
@@ -76,6 +79,13 @@
         display: flex;
         gap: 16px;
         margin-top: 32px;
+        a {
+            color: #ffff;
+            text-decoration: none;
+            &:hover {
+                color: $first_color;
+            }
+        }
     }
     &__indicators {
         margin-top: 130px;

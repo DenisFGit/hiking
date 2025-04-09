@@ -11,6 +11,10 @@
         h2 {
             margin-bottom: 0;
         }
+        &:hover {
+            color: $first_color;
+            transition: 0.3s all;
+        }
     }
     &__list-wrapper {
         display: flex;
@@ -24,8 +28,19 @@
         text-align: center;
         margin-bottom: 0;
         @include text_style;
+        li {
+            &:hover {
+                color: $first_color;
+                transition: 0.3s all;
+            }
+        }
     }
     &__account {
+        cursor: pointer;
+        &:hover {
+            color: $first_color;
+            transition: 0.3s all;
+        }
         @include text_style;
         &-wrapper {
             display: flex;
